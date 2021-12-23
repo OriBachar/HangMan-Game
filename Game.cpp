@@ -167,22 +167,22 @@ void DrawHangman(int guessCount)
 
 void PrintLetters(string guess, char from, char to)
 {
-    string s;
+    string string;
 
     for (char i = from; i <= to; i++)
     {
         if (guess.find(i) == string::npos)
         {
-            s += i;
+            string += i;
 
-            s += " ";
+            string += " ";
         }
 
         else
-            s += "  ";
+            string += "  ";
     }
 
-    Print(s, false, false);
+    Print(string, false, false);
 }
 
 void PrintAvailableLetters(string taken)
